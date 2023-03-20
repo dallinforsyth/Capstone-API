@@ -1,3 +1,3 @@
 class Breed < ApplicationRecord
-  belongs_to :pet
+  has_many :pets
 end
