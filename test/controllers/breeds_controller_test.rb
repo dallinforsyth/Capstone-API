@@ -1,7 +1,10 @@
 require "test_helper"
 
 class BreedsControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+  test "create" do
+    assert_difference "Breed.count", 1 do
+      post "/breeds.json", params: { name: "bangel", animal_type: "cat" }
+      assert_response 200
+    end
+  end
 end
