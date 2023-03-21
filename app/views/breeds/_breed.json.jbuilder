@@ -1,3 +1,3 @@
 json.id breed.id
-json.name breed.name
+json.classification breed.classification
 json.animal_type breed.animal_type
