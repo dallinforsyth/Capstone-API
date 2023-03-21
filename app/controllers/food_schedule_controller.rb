@@ -1,2 +1,0 @@
-class FoodScheduleController < ApplicationController
-end

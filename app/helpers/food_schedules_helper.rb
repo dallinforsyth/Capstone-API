@@ -1,0 +1,2 @@
+module FoodSchedulesHelper
+end

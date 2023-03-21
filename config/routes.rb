@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get "/pets/:id" => "pets#show"
   post "/pets" => "pets#create"
   post "/breeds" => "breeds#create"
+  post "/food_schedules" => "food_schedules#create"
 end
