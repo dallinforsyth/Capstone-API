@@ -1,6 +1,6 @@
 class FoodSchedulesController < ApplicationController
   def create
-    @food_schedule = FoodSchedual.create!(
+    @food_schedule = FoodSchedule.create!(
       food: params[:food],
       frequency: params[:frequency],
       start_time: params[:start_time],
