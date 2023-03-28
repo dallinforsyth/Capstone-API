@@ -1,3 +1,9 @@
 json.id breed.id
 json.classification breed.classification
 json.animal_type breed.animal_type
+json.external_id breed.external_id
+json.description breed.description
+json.temperament breed.temperament
+json.life_span breed.life_span
+json.description breed.description
+json.origin breed.origin

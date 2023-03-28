@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_21_200836) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_28_161908) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -19,6 +19,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_21_200836) do
     t.string "animal_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "external_id"
+    t.string "temperament"
+    t.string "description"
+    t.string "life_span"
+    t.string "origin"
+    t.integer "hypoallergenic"
   end
 
   create_table "food_schedules", force: :cascade do |t|
