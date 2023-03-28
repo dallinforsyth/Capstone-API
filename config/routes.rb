@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   post "/pets" => "pets#create"
   post "/breeds" => "breeds#create"
   post "/food_schedules" => "food_schedules#create"
+  delete "/food_schedules/:id" => "food_schedules#destroy"
 end

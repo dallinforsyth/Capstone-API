@@ -10,4 +10,10 @@ class FoodSchedulesController < ApplicationController
     )
     render :show
   end
+
+  def destroy
+    @food_schedule = FoodSchedule.find_by(id: params[:id])
+    @food_schedule.destroy
+    render json: { message: "Food Schedule destroyed successfully" }
+  end
 end

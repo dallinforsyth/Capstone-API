@@ -7,4 +7,11 @@ class FoodSchedulesControllerTest < ActionDispatch::IntegrationTest
       assert_response 200
     end
   end
+
+  test "destroy" do
+    assert_difference "FoodSchedule.count", -1 do
+      delete "/food_schedules/#{FoodSchedule.first.id}.json"
+      assert_response 200
+    end
+  end
 end
